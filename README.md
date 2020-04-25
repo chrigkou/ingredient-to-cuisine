@@ -4,7 +4,7 @@ Cuisine categorization using the [Recipe Ingredients Dataset](https://www.kaggle
 
 # Description
 
-This project uses neural networks to predict the type of cuisine a recipe belongs to, using its ingredients. Here, MLP, SVM and RBF networks are trained and tested on the data. As the test set does not have labels, the train set is split and used for training and evaluation of the models.  The SVM and RBF networks are implemented using mathematic formulas.
+This project uses neural networks to predict the type of cuisine a recipe belongs to, using its ingredients. Here, MLP, SVM and RBF classifiers are trained and tested on the data. As the test set does not have labels, the train set is split and used for training and evaluation of the models.  The SVM and RBF classifiers are implemented using mathematic formulas.
  
 # Methodology
 
@@ -31,13 +31,13 @@ This project uses neural networks to predict the type of cuisine a recipe belong
  1. [open.py](https://github.com/chrigkou/ingredient-to-cuisine/blob/master/open.py): data statistics, text analysis and preprocessing, split in train and test sets, use label encoder for the cuisines
  2. [mlp.py](https://github.com/chrigkou/ingredient-to-cuisine/blob/master/mlp.py): dimensionaltity reduction with chi2 feature selection, svd decomposition and pca. Apply a 4 layer MLP on the data
  3.  [svm.py](https://github.com/chrigkou/ingredient-to-cuisine/blob/master/svm.py): feature selection with chi2, select two classes from the dataset for 1 vs 1 SVM classifier. The custom SVM is a mathematic implementation using matrices. The results are compared to the SVC classifier from sklearn.
- 4. [rbf.py](https://github.com/chrigkou/ingredient-to-cuisine/blob/master/rbf.py): the RBF network is implemented with a gaussian and a square kernel. The initial centers are selected randomly or using kmeans.
+ 4. [rbf.py](https://github.com/chrigkou/ingredient-to-cuisine/blob/master/rbf.py): the RBF classifier is implemented with a gaussian and a square kernel. The initial centers are selected randomly or using kmeans.
 
  
 
 ## Run an experiment
 
-In order to train and test a selected network all you have to do is run the corrisponding python file.
+In order to train and test a selected classifier all you have to do is run the corrisponding python file.
 
 > **Note:** You can change the method of feature selection for each experimenrt to test different algorithms and networks.
 
